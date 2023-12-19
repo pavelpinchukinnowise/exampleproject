@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Azure.Maps.Geolocation" Version="1.0.0-beta.2" />
+    <PackageReference Include="Azure.Maps.Rendering" Version="1.0.0-beta.2" />
+    <PackageReference Include="Azure.Maps.Routing" Version="1.0.0-beta.2" />
+    <PackageReference Include="Azure.Maps.Search" Version="1.0.0-beta.4" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Http" Version="7.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Forwarding.Management.Application.Locations\Forwarding.Management.Application.Locations.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,1 @@
+java  -jar swagger-codegen-cli.jar generate -i http://localhost:5105/swagger/v1/swagger.json -l typescript-angular -o projects/forwarding-management-angular-sdk/src/lib --additional-properties ngVersion=16 -t swagger-templates  

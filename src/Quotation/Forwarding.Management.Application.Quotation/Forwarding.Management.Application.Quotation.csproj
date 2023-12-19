@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Commands\DeleteQuotation\**" />
+    <EmbeddedResource Remove="Commands\DeleteQuotation\**" />
+    <None Remove="Commands\DeleteQuotation\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="11.6.0" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.6.0" />
+    <PackageReference Include="MediatR" Version="12.0.1" />
+    <PackageReference Include="Microsoft.Azure.Cosmos" Version="3.35.2" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="7.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common\Forwarding.Management.Application.Common\Forwarding.Management.Application.Common.csproj" />
+    <ProjectReference Include="..\..\Common\Forwarding.Management.Application.Resources\Forwarding.Management.Application.Resources.csproj" />
+    <ProjectReference Include="..\..\Common\Forwarding.Management.Domain\Forwarding.Management.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
